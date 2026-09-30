@@ -191,7 +191,7 @@ The local address is only available on the computer running the local developmen
 9. GitHub Repository
 The source code is available through the public GitHub repository.
 GitHub Repository:
-`YOUR_GITHUB_REPOSITORY_URL`
+https://github.com/JaniqueM/MindBridge.git
 
 10. Development Workflow
 Git is used to manage changes to the project.
@@ -246,7 +246,7 @@ The project demonstrates the software development process, including:
 | Resource              | Link                         |
 | --------------------- | ---------------------------- |
 | **Live Website**      | https://janiquem.github.io/MindBridge/#/
-| **GitHub Repository** | `YOUR_GITHUB_REPOSITORY_URL` 
+| **GitHub Repository** | https://github.com/JaniqueM/MindBridge.git
 | **SRS Document**      | https://docs.google.com/document/d/1iT6ZfXTfUkb8oX7r91i9AS2OTdx14_zdnQzZ0DxQ0Dk/edit?usp=sharing
 | **Demo Video**        | https://youtu.be/kHyLzbSNz8Y?si=Bi4su9rTjbW9-fHI
 
