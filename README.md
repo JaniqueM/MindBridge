@@ -180,11 +180,13 @@ http://localhost:8000
 This runs the project through a local web server and more closely matches how a deployed website is served.
 
 8. Live Website
-A publicly deployed version of MindBridge is required for the project submission.
-Users do **not** need to install Git, Python, or any other software to use the deployed version.
-Simply open the website URL in a web browser.
-**Live Website:**
-`YOUR_DEPLOYED_WEBSITE_URL`
+The publicly deployed version of MindBridge is available at:
+Live Website:
+https://janiquem.github.io/MindBridge/
+The website can be accessed directly through a web browser. Users do not need to install Git, Python, or any other software to access the deployed version.
+For local development, the website can still be run using:
+http://localhost:8000
+The local address is only available on the computer running the local development server.
 
 9. GitHub Repository
 The source code is available through the public GitHub repository.
