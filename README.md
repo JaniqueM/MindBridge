@@ -1,52 +1,274 @@
 # MindBridge
+MindBridge is a web application designed for people aged 13 and older. It provides a supportive space where users can check in with their wellbeing, reflect on how they are feeling, explore wellbeing resources, and find pathways toward human support.
+MindBridge is an early-support wellbeing platform. It is not a replacement for professional healthcare, diagnosis, counselling, or treatment.
 
-MindBridge is a university capstone website that offers people aged **13 and older** a gentle place to check in, reflect, explore wellbeing resources and find pathways toward human support. It is an early-support bridge, not a substitute for a clinician, diagnosis or treatment.
+1. Problem Statement
+People may experience emotional or wellbeing difficulties without knowing how to understand what they are experiencing or where to find appropriate support.
+MindBridge provides an accessible starting point where users can:
+* Reflect on their current wellbeing
+* Explore helpful wellbeing information
+* Learn about self-care and coping strategies
+* Identify possible support options
+* Find pathways toward appropriate human support
 
-## Project links
+2. Main Features
+# Wellbeing Check-In
+Allows users to reflect on their current wellbeing through a simple check-in.
 
-- **Live website:** Pending managed publication.
-- **Public GitHub repository:** Pending the requested canonical repository connection and public-access verification.
-- **SRS:** Use the assignment document supplied separately; add an authorized share link in the required course submission document.
+# Reflection
+Provides opportunities for users to reflect on their feelings, experiences, and current needs.
 
-## Run locally
+# Wellbeing Resources
+Provides information relating to areas such as:
+* Stress
+* Self-care
+* Coping strategies
+* Emotional wellbeing
+* Healthy habits
 
-MindBridge is a static HTML, CSS and browser-JavaScript application. It has no framework or package dependencies; Node.js and `npm install` are not required.
+# Support Pathways
+Helps users identify possible next steps, including speaking to someone they trust or seeking professional support.
 
-1. Clone the public repository: `git clone <public-repository-url>`.
-2. Enter the cloned project folder: `cd <cloned-folder>`.
-3. Open `index.html` in a current browser, or run `python3 -m http.server 8000` from the project root and open `http://localhost:8000`.
-4. Keep JavaScript enabled. A network connection is needed for Google-hosted fonts and the hosted landing illustration; local CSS and SVG fallbacks remain available.
-5. With a local server, the route manifest is at `http://localhost:8000/manus-routes.json`.
-6. Mood, journal, reading-plan and appointment-preview information can be removed from **Settings → Clear saved information**. Use fictional content only.
+# Safety Information
+Provides guidance toward appropriate support when a user may require additional or urgent help.
 
-## Explore MindBridge
+3. Technology
+MindBridge is a static HTML, CSS and JavaScript web application.
+The project uses:
+* HTML
+* CSS
+* JavaScript
+* Python 3
+* Git
+* GitHub
 
-- Start with **Continue anonymously** or the account-access screens. The role views (Young person, Professional and Administrator) are local examples; they do not create real accounts or access permissions.
-- The Home page links to the support guide, wellbeing check, **Journal**, mood tracker, resources, optional faith section, professional directory and urgent-help screen. Journal is available as its own navigation item and Home shortcut.
-- The support guide uses scripted responses and local keyword matching; it is not an AI model or a reliable crisis detector. It does not monitor messages or alert staff.
-- The five-question wellbeing check is educational and screening-style only. It is not a validated clinical instrument, diagnosis or assurance that a concern is absent.
-- Journal and mood tools save locally in the current browser. Local storage is not encrypted and may be visible to other people using that browser.
-- Professional profiles, availability, booking/referral steps, administrator statistics and publish/approval controls are illustrative examples. No real appointment or referral is sent, and listed profiles are not verified.
-- Faith-based content is optional and complementary; it never replaces professional support.
+Python's built-in HTTP server is used to run the website locally.
 
-## Safety, privacy and limitations
+4. Project Structure
+MindBridge/
+│
+├── docs/
+│   └── Project documentation
+│
+├── public/
+│   └── Public assets
+│
+├── src/
+│   ├── app.js
+│   ├── content.js
+│   ├── state.js
+│   └── views.js
+│
+├── .gitignore
+├── app.config.ts
+├── ideas.md
+├── index.html
+├── routes.json
+├── styles.css
+└── README.md
 
-This is a **front-end-only student prototype**. There is no online account service, password recovery, clinical monitoring, live AI, licensed-provider directory, real booking, email/SMS, referral transmission, encrypted database or emergency dispatch. The site cannot verify a visitor's age: its **13+** age statement is self-attested. Do not enter real passwords, names, contact details or sensitive health information.
+#Important files
+index.html
+The main entry point of the website.
 
-User-entered chat, mood, journal, screening and contact content is not sent to an application API. Browser-local information is not encrypted; use **Clear saved information** in Settings to remove it. The page requests fonts and landing artwork from external hosts; those providers may receive ordinary request metadata such as an IP address.
+styles.css
+Contains the website's layout, styling, colours, typography, and responsive design.
 
-Referral previews appear only after explicit consent and contain minimal anonymous information. The Professional and Administrator views are not production access controls. MindBridge does not claim POPIA compliance, confidentiality, clinical validation or effectiveness. If there is immediate danger, use the real support contacts below; no one monitors this website.
+src/content.js
+Contains content displayed throughout the application.
 
-## South African support contacts and sources
+src/state.js
+Manages application state and user interaction state.
 
-Contact details were checked against the linked sources on 30 September 2026. Availability can change; confirm with the service itself when possible.
+src/views.js
+Handles the creation and display of the application's different views.
 
-- [SADAG](https://www.sadag.org/) — Suicide Crisis Helpline: **0800 567 567**.
-- [LifeLine South Africa](https://lifelinesa.co.za/) — National Counselling Line: **0861 322 322**.
-- [Western Cape Government emergency-number guidance](https://www.westerncape.gov.za/know-who-you-can-call-emergency) — **112** from a mobile phone on the listed South African networks.
-- [South African Government call centres and help lines](https://www.gov.za/about-government/government-call-centres-and-help-lines).
-- Source notes: [`docs/contact-source-notes.md`](docs/contact-source-notes.md).
+src/app.js
+Initialises the application and connects the different JavaScript components.
 
-## Course submission reminders
+public
+Contains publicly used website assets.
 
-The website, source README, eventual public repository and live URL support the technical rubric deliverables. The learner still needs to record a clear 5–10 minute product walkthrough video and prepare the course Google Doc with the video, GitHub, SRS and website links. Verify each link using an assessor-accessible account and do not submit placeholders.
+docs/
+Contains supporting project documentation.
+
+5. Installation Requirements
+To run MindBridge locally, you need:
+
+- Git
+Git is required to download the project from GitHub.
+Check whether Git is installed:
+```powershell id="a0j8ma"
+git --version
+```
+
+- Python 3
+Python is used to run the local web server.
+Check whether Python is installed:
+```powershell id="z0d9qi"
+python --version
+```
+A Python 3 version should be displayed.
+
+- Web Browser
+Use a modern browser such as:
+* Google Chrome
+* Microsoft Edge
+* Mozilla Firefox
+
+6. Running MindBridge Locally
+Follow these steps from the beginning if you are setting up the project on a new computer.
+Step 1 — Clone the GitHub Repository
+Open **PowerShell** or another terminal.
+
+Run:
+git clone YOUR_GITHUB_REPOSITORY_URL
+
+Replace `YOUR_GITHUB_REPOSITORY_URL` with the actual public GitHub repository URL.
+This downloads a copy of the MindBridge project to your computer.
+
+Step 2 — Enter the Project Folder
+After cloning the repository, move into the project folder:
+cd MindBridge
+You should now be inside the MindBridge project directory.
+You can check the project files using:
+dir
+You should see files and folders such as:
+docs
+public
+src
+index.html
+styles.css
+README.md
+
+Step 3 — Start the Local Web Server
+MindBridge is a static website, so no package installation is required.
+Start Python's built-in web server:
+python -m http.server 8000
+If successful, the terminal will display a message similar to:
+Serving HTTP on 0.0.0.0 port 8000
+Keep this PowerShell window open while using the website.
+
+Step 4 — Open the Website
+Open a web browser.
+Enter the following address:
+http://localhost:8000
+Press **Enter**.
+The MindBridge website should now load.
+
+Step 5 — Use the Website
+Once the website opens, the user can navigate through the available MindBridge features, including:
+* The wellbeing check-in
+* Reflection features
+* Wellbeing resources
+* Support information
+* Other available pages and interactions
+
+Step 6 — Stop the Local Server
+When you are finished, return to the PowerShell window running the server.
+Press:
+Ctrl + C
+The local server will stop.
+
+7. Alternative Way to Open the Website
+Because MindBridge is a static website, the `index.html` file can also be opened directly.
+From inside the project folder:
+start index.html
+However, the recommended method is:
+python -m http.server 8000
+http://localhost:8000
+This runs the project through a local web server and more closely matches how a deployed website is served.
+
+8. Live Website
+A publicly deployed version of MindBridge is required for the project submission.
+Users do **not** need to install Git, Python, or any other software to use the deployed version.
+Simply open the website URL in a web browser.
+**Live Website:**
+`YOUR_DEPLOYED_WEBSITE_URL`
+
+9. GitHub Repository
+The source code is available through the public GitHub repository.
+**GitHub Repository:**
+`YOUR_GITHUB_REPOSITORY_URL`
+
+10. Development Workflow
+Git is used to manage changes to the project.
+
+#Check the current changes
+git status
+
+#Add changes
+git add .
+
+#Commit changes
+git commit -m "Describe the changes"
+
+#Push changes to GitHub
+git push
+
+11. Testing
+The prototype is tested against the requirements defined in the Software Requirements Specification (SRS).
+Testing may include:
+* Navigation testing
+* Button and interaction testing
+* Input validation
+* Responsive design testing
+* Browser compatibility
+* Accessibility checks
+* Error handling
+* Safety-related behaviour
+
+12. Project Documentation
+Supporting documentation is available in the `docs/` folder.
+
+#SRS
+The Software Requirements Specification contains the requirements used to guide the design and development of MindBridge.
+
+**SRS:**
+`YOUR_SRS_LINK`
+
+# 13. Project Status
+MindBridge is currently in the prototype/development stage.
+The project demonstrates the software development process, including:
+* Problem identification
+* Requirements engineering
+* System design
+* Prototyping
+* Implementation
+* Testing
+* Version control
+* Deployment
+
+14. Important Project Links
+
+| Resource              | Link                         |
+| --------------------- | ---------------------------- |
+| **Live Website**      | `YOUR_DEPLOYED_WEBSITE_URL`  |
+| **GitHub Repository** | `YOUR_GITHUB_REPOSITORY_URL` |
+| **SRS Document**      | `YOUR_SRS_LINK`              |
+| **Demo Video**        | `YOUR_VIDEO_LINK`            |
+
+# 15. Disclaimer
+
+MindBridge is an educational early-support wellbeing project.
+
+It does not provide:
+
+* Medical diagnosis
+* Medical treatment
+* Professional counselling
+* Emergency intervention
+
+Users who require professional or emergency support should contact an appropriate qualified service.
+
+
+#Quick Setup Summary
+For someone who already has Git and Python installed:
+
+git clone YOUR_GITHUB_REPOSITORY_URL
+cd MindBridge
+python -m http.server 8000
+
+Then open:
+http://localhost:8000
+That's all that is required to run MindBridge locally.
