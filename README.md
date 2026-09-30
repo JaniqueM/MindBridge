@@ -190,7 +190,7 @@ The local address is only available on the computer running the local developmen
 
 9. GitHub Repository
 The source code is available through the public GitHub repository.
-**GitHub Repository:**
+GitHub Repository:
 `YOUR_GITHUB_REPOSITORY_URL`
 
 10. Development Workflow
@@ -226,8 +226,8 @@ Supporting documentation is available in the `docs/` folder.
 #SRS
 The Software Requirements Specification contains the requirements used to guide the design and development of MindBridge.
 
-**SRS:**
-`YOUR_SRS_LINK`
+SRS:
+https://docs.google.com/document/d/1iT6ZfXTfUkb8oX7r91i9AS2OTdx14_zdnQzZ0DxQ0Dk/edit?usp=sharing
 
 # 13. Project Status
 MindBridge is currently in the prototype/development stage.
@@ -245,10 +245,10 @@ The project demonstrates the software development process, including:
 
 | Resource              | Link                         |
 | --------------------- | ---------------------------- |
-| **Live Website**      | `YOUR_DEPLOYED_WEBSITE_URL`  |
-| **GitHub Repository** | `YOUR_GITHUB_REPOSITORY_URL` |
-| **SRS Document**      | `YOUR_SRS_LINK`              |
-| **Demo Video**        | `YOUR_VIDEO_LINK`            |
+| **Live Website**      | https://janiquem.github.io/MindBridge/#/
+| **GitHub Repository** | `YOUR_GITHUB_REPOSITORY_URL` 
+| **SRS Document**      | https://docs.google.com/document/d/1iT6ZfXTfUkb8oX7r91i9AS2OTdx14_zdnQzZ0DxQ0Dk/edit?usp=sharing
+| **Demo Video**        | https://youtu.be/kHyLzbSNz8Y?si=Bi4su9rTjbW9-fHI
 
 # 15. Disclaimer
 
